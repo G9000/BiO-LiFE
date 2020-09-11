@@ -1,0 +1,180 @@
+// Product Divider Template //
+
+@mixin productDividerStylized($color) {
+    width: 33%;
+    height: 5px;
+    background-color: $color;
+    @media (min-width: 768px) and (max-width: 968px) {
+        width: 45%;
+    }
+    @media only screen and (max-width: 767px) {
+        width: 50%;
+    }
+};
+
+@mixin productDividerTitle {
+    width: 80%;
+    height: 1px;
+    background-color: white;
+};
+@mixin productDividerSeperator {
+    width: 100%;
+    height: 1px;
+    background-color: $grey;
+};
+
+
+
+
+// Blood Sugar Management //
+.product-bsm {
+    .product-banner{
+        background-color: $bsm;
+        .product-title h1 {
+            color: white !important;
+        };
+        .product-divider-title {
+            background-color: white;
+            width: 80%;
+            height: 1px;
+        };
+        h1, h2, p {
+            color: white;
+        };
+    };
+    .product-divider {
+        @include productDividerStylized($bsm);
+    };
+};
+
+// Children's Wellness //
+.product-ch {
+    .product-banner{
+        background-color: $cw;
+        color: white;
+    };
+    .product-divider {
+        @include productDividerStylized($cw);
+    };
+};
+
+// Digestive Health //
+.product-dh {
+    .product-banner{
+        background-color: $dh;
+        color: white;
+    };
+    .product-divider {
+        @include productDividerStylized($dh);
+    };
+};
+
+// Eye Health //
+.product-eh {
+    .product-banner{
+        background-color: $eh;
+        color: white;
+    };
+    .product-divider {
+        @include productDividerStylized($eh);
+    };
+};
+
+// General Health //
+.product-gh {
+    .product-banner{
+        background-color: $gh;
+        color: white;
+    };
+    .product-divider {
+        @include productDividerStylized($gh);
+    };
+};
+
+// Hair, Nail & Skin Health //
+.product-hns {
+    .product-banner{
+        background-color: $hns;
+        color: white;
+    };
+    .product-divider {
+        @include productDividerStylized($hns);
+    };
+};
+
+// Immune Health //
+.product-ih {
+    .product-banner{
+        background-color: $ih;
+        color: white;
+    };
+    .product-divider {
+        @include productDividerStylized($ih);
+    };
+};
+
+// Joint & Bone Health //
+.product-jbh {
+    .product-banner{
+        background-color: $jbh;
+        color: white;
+    };
+    .product-divider {
+        @include productDividerStylized($jbh);
+    };
+};
+
+// Liver Health //
+.product-lh {
+    .product-banner{
+        background-color: $lh;
+        color: white;
+    };
+    .product-divider {
+        @include productDividerStylized($lh);
+    };
+};
+
+// Men's Health //
+.product-mh {
+    .product-banner{
+        background-color: $mh;
+        color: white;
+    };
+    .product-divider {
+        @include productDividerStylized($mh);
+    };
+};
+
+// Probiotic Range //
+.product-pr {
+    .product-banner{
+        background-color: $pr;
+        color: white;
+    };
+    .product-divider {
+        @include productDividerStylized($pr);
+    };
+};
+
+// Oral Health //
+.product-oh {
+    .product-banner{
+        background-color: $oh;
+        color: white;
+    };
+    .product-divider {
+        @include productDividerStylized($oh);
+    };
+};
+
+// Women Health //
+.product-wh {
+    .product-banner{
+        background-color: $wh;
+        color: white;
+    };
+    .product-divider {
+        @include productDividerStylized($wh);
+    };
+};

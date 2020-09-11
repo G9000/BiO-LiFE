@@ -1,0 +1,11 @@
+@mixin productDivider($color) {
+    width: 33%;
+    height: 5px;
+    background-color: $color;
+    @media (min-width: 768px) and (max-width: 968px) {
+        width: 45%;
+    }
+    @media only screen and (max-width: 767px) {
+        width: 50%;
+    }
+};

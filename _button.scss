@@ -1,0 +1,24 @@
+@import './variable';
+
+.primaryButton {
+    display: inline-flex;
+	flex-direction: column; 
+	justify-content: center;
+	text-align: center;
+	width: 140px;
+    height: 50px;
+    border:none;
+    border:solid 2px $black;
+    background: rgba(255, 255, 255,0);
+    font-size: 18px;
+    padding: 0 10px;
+    &:hover {
+        background-color: $blue;
+        color: white;
+    }
+    
+}
+
+.outlinkButton {
+    display: inline-flex;
+}
