@@ -1,47 +1,93 @@
+html {
+    font-size: 62.5%;
+}
+
+
 h1 {
-    font-size: 3rem;
-    line-height: 130%;
-    color: $black;
+    font-size: 4.5rem;
+    line-height: 120%;
     font-weight: 700;
+    color: inherit;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 2.3rem;
+    text-rendering: optimizeLegibility;
     @media (min-width: 768px) and (max-width: 968px) {
-    font-size: 2.4rem;
+    font-size: 3.1rem;
     };
     @media (min-width: 367px) and (max-width: 768px) {
-        font-size: 1.9rem;
+        font-size: 2.8rem;
     };
 };
 
 
 h2 {
-    font-size: 2.4rem;
+    font-size: 3.1rem;
     line-height: 135%;
-    color: $black;
     font-weight: 700;
+    color: inherit;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 2.3rem;
+    text-rendering: optimizeLegibility;
     @media (min-width: 768px) and (max-width: 968px) {
-        font-size: 1.9rem;
+        font-size: 2.5rem;
     }
+    @media (min-width: 367px) and (max-width: 768px) {
+        font-size: 2.5rem;
+    };
 };
 
 h3 {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     line-height: 135%;
-    color: $black;
-    font-weight: 500;
+    font-weight: 700;
+    color: inherit;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 2.3rem;
+    text-rendering: optimizeLegibility;
     @media (min-width: 768px) and (max-width: 968px) {
-        font-size: 1.4rem;
+        font-size: 2.0rem;
     }
 };
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 135%;
-    color: $black;
     font-weight: 500;
+    color: inherit;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 2.3rem;
+    text-rendering: optimizeLegibility;
 };
 
 p {
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 140%;
-    color: $textGrey;
+    color: inherit;
     font-weight: 400;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 2.3rem;
 };
+
+
+
+sup {
+    line-height: 0;
+    vertical-align: baseline;
+    font-size: 50%;
+  }
+  

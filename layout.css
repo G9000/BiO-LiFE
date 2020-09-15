@@ -9,6 +9,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-self: center;
 }
 
 .horizontal-center {
@@ -22,5 +23,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-self: center;
 }
 /*# sourceMappingURL=layout.css.map */
