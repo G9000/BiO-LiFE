@@ -29,59 +29,66 @@
 
 
 
-.product-title {
-    padding: 20px 0;
-}
-
 .default-divider {
     height: 1px;
     background-color: rgb(235,235,235);
     margin: 20px 0;
 };
 
-.feature-container {
-    margin-top: 50px;
+
+.product-features {
+    margin: 40px 0;
 }
 
-.feature-description {
-    margin: 30px 0 30px;
+.product-serial {
+    margin: 40px 0;
 }
 
-  
+.features-description {
+    margin: 40px 0;
+}
+
+.serial-description {
+    margin: 40px 0;
+    p {
+        font-weight: 700;
+    }
+}
+
+
+
+.product-bsm {
+    .product-banner {
+        background-color: $bsm;
+        align-items: center;
+    }
+    .product-info {
+        padding: 5vh 0;
+        h2, h6, p {
+            color: white !important;
+        }
+    }
+    .product-divider {
+        @include productDividerStylized($bsm);
+    }
+    .faq-content {
+        @include faqContent($bsm-muted);
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
 
 // Blood Sugar Management //
-.product-bsm {
-    .product-banner{
-        background-color: $bsm;
-        .product-title h1 {
-            color: white !important;
-        };
-        .product-divider-title {
-            background-color: white;
-            width: 80%;
-            height: 1px;
-        };
-        .productDividerSeperator {
-            background-color: white;
-        }
-        h1, h2, p {
-            color: white;
-        };
-    };
-    .product-divider {
-        @include productDividerStylized($bsm);
-    };
-    .faq-content {
-        @include faqContent($bsm-muted);
-    }
-};
-
-
-
-
 
 
 // Children's Wellness //

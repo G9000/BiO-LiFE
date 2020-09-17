@@ -1,24 +1,81 @@
 @import './variable';
 
-.primaryButton {
+a {
+    color:whitesmoke;
+    text-decoration: none;
+    letter-spacing: 1px;
+};
+
+
+@mixin defaultButton {
     display: inline-flex;
-	flex-direction: column; 
-	justify-content: center;
-	text-align: center;
-	width: 140px;
     height: 50px;
-    border:none;
-    border:solid 2px $black;
-    background: rgba(255, 255, 255,0);
-    font-size: 18px;
-    padding: 0 10px;
-    &:hover {
-        background-color: $blue;
-        color: white;
-    }
-    
+    width: 150px;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+};
+
+#circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
 }
 
-.outlinkButton {
-    display: inline-flex;
-}
+
+.button {
+    @include defaultButton;
+};
+
+.buttonLink {
+    @include defaultButton;
+    border: 2px solid white;
+};
+
+
+#primaryButton {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color:$bioLifeGreen;
+    a {
+        position: relative;
+        transition: all .45s ease-Out;
+    };
+    &:hover #circle {
+            background: $midnightblue;
+            width: 200%;
+            height: 500%;
+            opacity: 1;
+            top: -70px;
+            left: -70px;
+        }
+    };
+
+#linkButton {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    a {
+        position: relative;
+        transition: all .45s ease-Out;
+    };
+    &:hover #circle {
+            background: $midnightblue;
+            width: 200%;
+            height: 500%;
+            opacity: 1;
+            top: -70px;
+            left: -70px;
+        }
+    };
